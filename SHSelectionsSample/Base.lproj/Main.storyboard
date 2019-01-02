@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ftZ-UL-jJn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SHSelections-->
+        <scene sceneID="oWS-RR-fLb">
+            <objects>
+                <viewController id="pKE-c1-JDQ" customClass="ViewController" customModule="SHSelectionsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J5C-WG-71h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l8t-Z8-87p">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="6Hf-nA-gmr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w62-97-XFr">
+                                            <rect key="frame" x="16" y="30" width="343" height="57"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="ITa-AW-4Wh"/>
+                                            </constraints>
+                                            <attributedString key="attributedText">
+                                                <fragment content="A sample project to demostrate how to use ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="SHSelections ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="15" name="AvenirNext-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="to easily use checkbox or radio buttons. ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckBox Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1i-tL-7aC">
+                                            <rect key="frame" x="16" y="117" width="343" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="ovh-TS-lpK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <color key="textColor" red="0.26364213199999997" green="0.26364213199999997" blue="0.26364213199999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coR-EK-TuS">
+                                            <rect key="frame" x="16" y="139" width="343" height="1"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="BI3-Ri-q94"/>
+                                            </constraints>
+                                        </view>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f83-dP-NxA" customClass="SHSelections" customModule="SHSelectionsSample" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="148" width="343" height="176"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="176" id="Igz-0R-cdL"/>
+                                            </constraints>
+                                        </tableView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RadioButton Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edP-kt-aBs">
+                                            <rect key="frame" x="16" y="344" width="343" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="xtV-qh-0uA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <color key="textColor" red="0.26364213199999997" green="0.26364213199999997" blue="0.26364213199999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDX-Vg-ZmF">
+                                            <rect key="frame" x="16" y="366" width="343" height="1"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="mLw-ua-Mc4"/>
+                                            </constraints>
+                                        </view>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gx1-Lq-WEl" customClass="SHSelections" customModule="SHSelectionsSample" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="375" width="343" height="176"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="176" id="sMI-XK-iyQ"/>
+                                            </constraints>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="edP-kt-aBs" secondAttribute="trailing" constant="16" id="1SM-Zt-bl7"/>
+                                        <constraint firstItem="YDX-Vg-ZmF" firstAttribute="top" secondItem="edP-kt-aBs" secondAttribute="bottom" constant="1" id="4ec-bV-3VA"/>
+                                        <constraint firstItem="f83-dP-NxA" firstAttribute="top" secondItem="coR-EK-TuS" secondAttribute="bottom" constant="8" id="64n-ad-jtD"/>
+                                        <constraint firstItem="f83-dP-NxA" firstAttribute="leading" secondItem="6Hf-nA-gmr" secondAttribute="leading" constant="16" id="73F-uu-W47"/>
+                                        <constraint firstItem="w62-97-XFr" firstAttribute="top" secondItem="6Hf-nA-gmr" secondAttribute="top" constant="30" id="8JH-1K-cxx"/>
+                                        <constraint firstItem="edP-kt-aBs" firstAttribute="leading" secondItem="6Hf-nA-gmr" secondAttribute="leading" constant="16" id="HrT-42-EJ5"/>
+                                        <constraint firstItem="edP-kt-aBs" firstAttribute="top" secondItem="f83-dP-NxA" secondAttribute="bottom" constant="20" id="LJD-4O-OUf"/>
+                                        <constraint firstItem="coR-EK-TuS" firstAttribute="top" secondItem="p1i-tL-7aC" secondAttribute="bottom" constant="1" id="MrM-8k-pUY"/>
+                                        <constraint firstItem="p1i-tL-7aC" firstAttribute="leading" secondItem="6Hf-nA-gmr" secondAttribute="leading" constant="16" id="Z3C-29-ofM"/>
+                                        <constraint firstItem="w62-97-XFr" firstAttribute="leading" secondItem="6Hf-nA-gmr" secondAttribute="leading" constant="16" id="d9q-bt-fn6"/>
+                                        <constraint firstAttribute="trailing" secondItem="p1i-tL-7aC" secondAttribute="trailing" constant="16" id="dKE-1a-hZs"/>
+                                        <constraint firstAttribute="trailing" secondItem="f83-dP-NxA" secondAttribute="trailing" constant="16" id="ejx-1I-3Fi"/>
+                                        <constraint firstItem="coR-EK-TuS" firstAttribute="trailing" secondItem="p1i-tL-7aC" secondAttribute="trailing" id="f9a-Ob-Zwr"/>
+                                        <constraint firstItem="p1i-tL-7aC" firstAttribute="top" secondItem="w62-97-XFr" secondAttribute="bottom" constant="30" id="gNo-id-NDW"/>
+                                        <constraint firstAttribute="trailing" secondItem="YDX-Vg-ZmF" secondAttribute="trailing" constant="16" id="gXG-sf-E8U"/>
+                                        <constraint firstItem="Gx1-Lq-WEl" firstAttribute="leading" secondItem="6Hf-nA-gmr" secondAttribute="leading" constant="16" id="hzx-dc-RhW"/>
+                                        <constraint firstAttribute="trailing" secondItem="Gx1-Lq-WEl" secondAttribute="trailing" constant="16" id="k3A-IW-ao5"/>
+                                        <constraint firstItem="coR-EK-TuS" firstAttribute="top" secondItem="6Hf-nA-gmr" secondAttribute="top" constant="139" id="kGw-OU-GYg"/>
+                                        <constraint firstAttribute="trailing" secondItem="w62-97-XFr" secondAttribute="trailing" constant="16" id="mkw-WH-GH9"/>
+                                        <constraint firstItem="Gx1-Lq-WEl" firstAttribute="top" secondItem="YDX-Vg-ZmF" secondAttribute="bottom" constant="8" id="uNW-Ws-br2"/>
+                                        <constraint firstItem="YDX-Vg-ZmF" firstAttribute="leading" secondItem="6Hf-nA-gmr" secondAttribute="leading" constant="16" id="v4K-3T-Nn6"/>
+                                        <constraint firstItem="coR-EK-TuS" firstAttribute="leading" secondItem="p1i-tL-7aC" secondAttribute="leading" id="x25-Tx-wzt"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l8t-Z8-87p" firstAttribute="leading" secondItem="8cr-Mu-1wn" secondAttribute="leading" id="Dg8-tR-cjc"/>
+                            <constraint firstItem="8cr-Mu-1wn" firstAttribute="trailing" secondItem="l8t-Z8-87p" secondAttribute="trailing" id="fBR-3Y-qmH"/>
+                            <constraint firstItem="8cr-Mu-1wn" firstAttribute="bottom" secondItem="l8t-Z8-87p" secondAttribute="bottom" id="ku0-Ub-I4N"/>
+                            <constraint firstItem="l8t-Z8-87p" firstAttribute="top" secondItem="8cr-Mu-1wn" secondAttribute="top" id="z37-x1-MMj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8cr-Mu-1wn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SHSelections" id="7Kw-gW-pLw"/>
+                    <connections>
+                        <outlet property="checkboxSelection" destination="f83-dP-NxA" id="Rvm-Eo-mUv"/>
+                        <outlet property="radioButtonSelection" destination="Gx1-Lq-WEl" id="HMi-yP-yLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCN-8u-ihT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.39999999999998" y="-579.76011994002999"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C08-0y-lQZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ftZ-UL-jJn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wf3-jT-xGc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pKE-c1-JDQ" kind="relationship" relationship="rootViewController" id="EiT-v3-3VV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfS-Y1-Uro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="-579.76011994002999"/>
+        </scene>
+    </scenes>
+</document>
